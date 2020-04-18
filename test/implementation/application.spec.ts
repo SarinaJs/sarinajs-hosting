@@ -194,7 +194,7 @@ describe('sarina-hosting', () => {
 
 					expect.assertions(2);
 					class SampelHost implements IHost {
-						public isCanceled: boolean = false;
+						public isCanceled = false;
 
 						start(): Promise<void> {
 							return new Promise((r) => {

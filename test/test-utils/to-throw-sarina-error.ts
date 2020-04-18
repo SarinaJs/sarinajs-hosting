@@ -2,6 +2,7 @@ import { SarinaHostingError } from '@sarina/hosting';
 
 export {};
 
+// eslint-disable-next-line @typescript-eslint/class-name-casing
 export interface toMatch {
 	code?: string;
 	name?: string;
@@ -10,6 +11,7 @@ export interface toMatch {
 }
 
 declare global {
+	// eslint-disable-next-line @typescript-eslint/no-namespace
 	namespace jest {
 		interface Matchers<R> {
 			toThrowSarinaError(match: toMatch): R;

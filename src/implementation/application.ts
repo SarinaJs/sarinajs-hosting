@@ -3,7 +3,7 @@ import { SarinaHostingError } from '../errors';
 
 export class Application implements IApplication {
 	public runningProcess: Promise<void[]>;
-	public isRunning: boolean = false;
+	public isRunning = false;
 
 	public constructor(public readonly hosts: IHost[]) {
 		if (hosts == null) throw SarinaHostingError.ParameterNullError('hosts');
